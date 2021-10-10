@@ -38,7 +38,7 @@ function validateNombreForm () {
     // longitud al menos 8 y tener una mayúscula, una minúscula y un
     // carater especial.
     let contrasena = document.forms["nombre_form"]["contrasena"].value;
-    let patt2 = /.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d)(?=.*[!#$%&?_"]).*/g;
+    let patt2 = /.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!#$%&?_"]).*/g;
     if (!patt2.test(contrasena)){
         alert("Debes ingresar una contrasena válida");
         return 0;
