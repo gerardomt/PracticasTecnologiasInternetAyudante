@@ -1,0 +1,71 @@
+/* Archivo de estilso css para Práctica 01 de Tecnologías para
+   Desarrollos en Internet */
+/* Gerardo Daniel Martínez Trujillo */
+/* 311314348 */
+
+
+body {
+    background-color: #58B095;
+}
+
+/* Estilo para algunos encabezados */
+h1, h3 {
+    text-align: center;
+    color: #362C5E;
+}
+
+/* Estilo para listas sin orden*/
+ul {
+    /* viñetas como circulos */
+    list-style-type: circle;
+}
+
+/* Estilo para listas ordenadas */
+ol {
+    /* viñetas en números romanos */
+    list-style-type: upper-roman;
+}
+
+/* Estilo para elementos de listas */
+li {
+    color: #FFF;
+    background: #362C5E;
+    padding: 10px;
+    margin-left: 40px;
+    max-width: 30%;
+}
+
+/* Estilos para elementos de listas de clase claro */
+li.claro {
+    background: #58B095;
+}
+
+/* Estilos para clase subtitulo */
+.subtitulo {
+    color: #362C5E;
+    text-align: left;
+    text-trasform: uppercase;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+/* Estilos para el formulario nombre_form */
+#nombre_form input {
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+
+#nombre_form label {
+    color: #362C5E;
+    text-decoration: underline;
+}
+
+/* Estilos para el formulario fav_language_form */
+#nombre_form input[type=radio] {
+    width: 5%;
+    border: 2px solid #362C5E;
+}
+
+#nombre_form input[type=submit] {
+    width: 20%;
