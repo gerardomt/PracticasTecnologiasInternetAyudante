@@ -1,5 +1,5 @@
-Tecnologías para Internet - Práctica 01
-Sitio con HTML y CSS
+Tecnologías para Internet - Práctica 03
+JavaScript y validar formulario
 
 Gerardo Daniel Martínez Trujillo
 311314348
