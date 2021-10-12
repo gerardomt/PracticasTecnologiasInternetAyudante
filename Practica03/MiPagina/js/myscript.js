@@ -1,4 +1,4 @@
-/*
+/**
 Archivo con código JavaScript para Práctica 03 de Tecnologías para
      Desarrolos en Internet
 
@@ -6,7 +6,7 @@ Archivo con código JavaScript para Práctica 03 de Tecnologías para
      311314348
 */
 
-/*
+/**
 Esta función se ejecuta al cargar el body de ejemplo_javascript.html
 */
 function main()

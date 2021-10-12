@@ -1,4 +1,4 @@
-/*
+/**
 Función que valida los datos en el formulario nombre_form de la página
 etiquetas.html. Si alguno de los datos no es válido, muestra un
 mensaje de alerta y regresa 0. Si todos los datos son válidos muestra
