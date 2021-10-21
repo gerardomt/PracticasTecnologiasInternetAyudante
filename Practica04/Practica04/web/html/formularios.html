@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formularios</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/estilo_tareas.css">
+        <script type="text/javascript" src="../js/form_control.js"></script>
+    </head>
+    <body>
+        <h1>Formularios Servlets</h1>
+        <hr>
+        <h2>Get</h2>
+        <form id="formGet" action="../control" method="get">
+            <label for="user">Usuario: </label><input type="text" name="user"/><br/>
+            <label for="pass">Password: </label><input type="password" name="pass"/><br/>
+            <br/>
+            <input type="submit" value="Enviar" name="enviar"/><br/><br/>
+        </form>
+        <hr>
+        <h2>Post</h2>
+        <form id="formPost" action="../control" method="post">
+            <label for="user">Usuario: </label><input type="text" name="user"/><br/>
+            <label for="pass">Password: </label><input type="password" name="pass"/><br/>
+            <label for="correo">Correo: </label><input type="email" name="correo"><br>
+            <br/>
+            <input type="submit" value="Enviar" name="enviar"/><br/><br/>
+        </form>
+    </body>
+</html>
