@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!-- Archivo que ejemplos de varias etiquetas HTML para Práctica 01 de
+     Tecnologías para Desarrolos en Internet
+     Gerardo Daniel Martínez Trujillo
+     311314348 -->
+<html>
+  <head>
+    <title>Ejemplos de HTML</title>
+    <link rel="stylesheet" href="../css/estilo_tareas.css">
+    <script type="text/javascript" src="../js/form_control.js"></script>
+    <meta charset="UTF-8">
+  </head>
+<body>
+
+  <h1>Ejemplos de Etiquetas HTML</h1>
+
+  <hr>
+
+  <h2 class="subtitulo">Imagenes</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1024px-Star_Wars_Logo.svg.png" alt="Star Wars logo">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Star_Wars_-_Darth_Vader.jpg" alt="Darth Vader">
+
+  <h2 class="subtitulo">Audios</h2>
+
+  <p>Canto de un pajarito (n_n)</p>
+  <audio controls>
+    <source src="../audio/cardinal-bird-call.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <h2 class="subtitulo">Listas</h2>
+
+  <p>Lista ordenada</p>
+  <ol>
+    <li>Primero</li>
+    <li class="claro">Segundo</li>
+    <li>Tercero</li>
+  </ol>
+
+  <p>Lista sin orden</p>
+  <ul>
+    <li>Elemento</li>
+    <li class="claro">Elemento</li>
+    <li>Elemento</li>
+  </ul>
+
+  <h2 class="subtitulo">Videos</h2>
+
+  <p>Trailer de Matrix Resucrrections</p>
+  <iframe width="1354" height="487" src="https://www.youtube.com/embed/qjnvX44LoQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <h2 class="subtitulo">Formularios</h2>
+  <form id="nombre_form" action="#" onsubmit="return validateNombreForm()">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br>
+
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido"><br>
+
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad"><br>
+
+    <label for="correo">Correo:</label><br>
+    <input type="email" id="correo" name="correo"><br>
+
+    <label for="contrasena">Contraseña (Debe ser de longitud >= 8, tener al menos 1
+    mayúscula, 1 minúscula, 1 número y 1 caracter especial):</label><br>
+    <input type="password" id="contrasena" name="contrasena"><br>
+
+    <p>¿Qué lenguaje de programación te gusta más?</p>
+
+    <input type="radio" id="python" name="fav_language" value="python">
+    <label for="python">Python</label><br>
+    <input type="radio" id="java" name="fav_language" value="pava">
+    <label for="java">Java</label><br>
+    <input type="radio" id="c" name="fav_language" value="c">
+    <label for="c">C</label><br>
+    <input type="radio" id="haskell" name="fav_language" value="haskell">
+    <label for="haskell">Haskell</label><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+</body>
+</html>
