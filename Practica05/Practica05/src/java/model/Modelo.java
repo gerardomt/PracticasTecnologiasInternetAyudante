@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.ArrayList;
 import beans.Usuario;
 /**
  *
@@ -13,7 +12,7 @@ import beans.Usuario;
  */
 public class Modelo {
     
-    public Connection getConnection(){
+    private Connection getConnection(){
         Connection cn= null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -26,6 +25,10 @@ public class Modelo {
         return cn;
     }
     
+    /**
+     * Inserta al usuario en la base de datos
+     * @param usuario Usuario que será insertado
+     */
     public void insertUsuario(Usuario usuario){
         try {
             Connection con = getConnection();
@@ -38,7 +41,13 @@ public class Modelo {
             e.printStackTrace();
         }
     }
-        
+    
+    /**
+     * Busca en la base de datos un usuario que tenga el mismo nombre que el 
+     * parámetro nombre. 
+     * @param nombre Nombre del usuario que será buscado
+     * @return Si encuentra al usuario lo devuelve como un Usuario, sino regresa null
+     */
     public Usuario getUsuario(String nombre){
         Usuario response = null; 
         try {

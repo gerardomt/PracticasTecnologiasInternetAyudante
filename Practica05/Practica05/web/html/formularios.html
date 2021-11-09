@@ -11,6 +11,8 @@
         <h1>Formularios Servlets</h1>
         <hr>
         <h2>Get</h2>
+        <p>Si los datos que ingresas en este formulario se encuentran en la base 
+            de datos, entonces se te dará acceso</p>
         <form id="formGet" action="../control" method="get">
             <label for="user">Usuario: </label><input type="text" name="user"/><br/>
             <label for="pass">Password: </label><input type="password" name="pass"/><br/>
@@ -19,7 +21,8 @@
         </form>
         <hr>
         <h2>Post</h2>
-        <form id="formPost" action="../control" method="post">
+        <p>Si los datos son válidos serán ingresados a la base de datos</p>
+        <form id="formPost" action="../control" method="post" onsubmit="return validaPostForm();">
             <label for="user">Usuario: </label><input type="text" name="user"/><br/>
             <label for="pass">Password: </label><input type="password" name="pass"/><br/>
             <label for="correo">Correo: </label><input type="email" name="correo"><br>

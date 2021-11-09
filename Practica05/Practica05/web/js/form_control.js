@@ -47,3 +47,26 @@ function validateNombreForm () {
     alert("Todos tus datos han sido validados correctamente.");
 
 }
+
+function validaPostForm(){
+    let user = document.forms["formPost"]["user"].value;
+    if (user == ""){
+        alert("Debes de proveer un nombre de usuario.");
+        return false;
+    }
+
+    // Revisa que se haya ingresado un password
+    let pass = document.forms["formPost"]["pass"].value;
+    if (pass == ""){
+        alert("Debes de proveer un password.");
+        return false;
+    }
+
+    // Revisa que el correo tenga un formato válido
+    let correo = document.forms["formPost"]["correo"].value;
+    let patt = /.+@\w+/g;
+    if (!patt.test(correo)){
+        alert("Debes ingresar un correo válido");
+        return false;
+    }
+}

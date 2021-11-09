@@ -62,7 +62,6 @@ public class Control extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         Usuario result = modelo.getUsuario(request.getParameter("user"));
-        //if (result == null) return;
         
         request.setCharacterEncoding("UTF-8");
         response.setContentType( "text/html" );
@@ -77,7 +76,7 @@ public class Control extends HttpServlet {
                 "<body>\n" +
                 "<h1>Formulario de Get</h1>\n");
         
-        if (result.getUsuario().equals(request.getParameter("user"))){
+        if (result != null && result.getUsuario().equals(request.getParameter("user"))){
             if (result.getPassword().equals(request.getParameter("pass"))){
                 out.println("<h3>Bienvenido " + result.getUsuario() + "</h3>");
                 out.println("<p>Tu correo es: " + result.getEmail() + "</p>");
